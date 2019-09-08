@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>TruckDock0.3</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+1. Save WHS Locations mgmt. <i>tab</i> as CSV (Comma delimited)<br />
+2. Save TDK <i>tab</i> as CSV (Comma delimited)<br />
+3. Paste from exported filez:<br />
+  <form>
+      Locations (only rows containing TDK Area code):<textarea id="loc_csv"></textarea><span id="loc_ok"></span>
+      <br />
+      TDK (only rows containing TDK Area code):<textarea id="dor_csv"></textarea><span id="dor_ok"></span>
+      <br />
+      <input type="button" id="getsql" value="Get SQL" onclick="GetSQL()" />
+  </form>
+  <code id="sql">
+      <!-- here comes the code -->
+  </code>
+  <script src="main.js"></script>
+</body>
+</html>
